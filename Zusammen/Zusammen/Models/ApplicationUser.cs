@@ -3,24 +3,35 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Zusammen.Models
 {
-	public class ApplicationUser : IdentityUser
+    public enum SchoolYear
     {
-		public ApplicationUser()
-		{
+        Freshman,
+        Sophemore,
+        Junior,
+        Senior,
+        superSenior,
+        gradStudent
+    }
 
-		}
+    public enum SchoolHousing
+    {
+        arc,
+        cn,
+        cw,
+        cty,
+        jst,
+        mrh,
+        ssr,
+        tbh
+    }
+    public class ApplicationUser : IdentityUser
+    {
+        public ApplicationUser() { }
+        public SchoolYear schoolyear { get; set; }
+        public SchoolHousing schoolhousing { get; set; }
 
-		public enum school_year
-		{
-			Freshman,
-			Sophemore,
-			Junior,
-			Senior,
-			superSenior,
-			gradStudent
-		}
+    }
+            
 
-		public school_year Year { get; set; }
-	}
 }
 
