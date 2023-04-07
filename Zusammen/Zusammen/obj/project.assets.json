@@ -1753,11 +1753,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/carmenthom/Projects/Zusammen/Zusammen/Zusammen.csproj",
+      "projectUniqueName": "/Users/carmenthom/Documents/SparkHack-2023-team-NOT-FOUND/Zusammen/Zusammen/Zusammen.csproj",
       "projectName": "Zusammen",
-      "projectPath": "/Users/carmenthom/Projects/Zusammen/Zusammen/Zusammen.csproj",
+      "projectPath": "/Users/carmenthom/Documents/SparkHack-2023-team-NOT-FOUND/Zusammen/Zusammen/Zusammen.csproj",
       "packagesPath": "/Users/carmenthom/.nuget/packages/",
-      "outputPath": "/Users/carmenthom/Projects/Zusammen/Zusammen/obj/",
+      "outputPath": "/Users/carmenthom/Documents/SparkHack-2023-team-NOT-FOUND/Zusammen/Zusammen/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/carmenthom/.nuget/NuGet/NuGet.Config"
