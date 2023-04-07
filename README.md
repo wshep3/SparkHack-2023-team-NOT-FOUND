@@ -4,3 +4,4 @@
 - Carmen
 - Chris
 - Eli
+![Funny Sparky Image](Spark_Hacks_Icon.png)
