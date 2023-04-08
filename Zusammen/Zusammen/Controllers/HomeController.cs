@@ -24,9 +24,9 @@ public class HomeController : Controller
         {
             var users = _userManager.Users.ToList();
             var rValues = calcRValues(users);
-            ViewBag.RValues = rValues;
+            return View(rValues);
         }
-        return View();
+        return View(new List<int>());
     }
 
     public IActionResult Privacy()
