@@ -33,6 +33,12 @@
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
+                <select asp-for="Input.gender" asp-items="@Html.GetEnumSelectList<Gender>()">
+                    <option value="">-- Select Gender --</option>
+                </select>
+                <span asp-validation-for="Input.gender" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
                 <select asp-for="Input.schoolyear" asp-items="@Html.GetEnumSelectList<SchoolYear>()">
                     <option value="">-- Select School Year --</option>
                 </select>

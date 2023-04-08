@@ -85,6 +85,10 @@ namespace Zusammen.Areas.Identity.Pages.Account
             public Major major { get; set; }
 
             [Required]
+            [Display]
+            public Gender gender { get; set; }
+
+            [Required]
             [Display(Name = "Full Name")]
             public string name { get; set; }
 
@@ -139,6 +143,7 @@ namespace Zusammen.Areas.Identity.Pages.Account
                 user.schoolyear = Input.schoolyear;
                 user.schoolhousing = Input.schoolhousing;
                 user.major = Input.major;
+                user.gender = Input.gender;
                 user.name = Input.name;
                 user.hobbies = Input.hobbies;
               

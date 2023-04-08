@@ -236,6 +236,19 @@ namespace Zusammen.Models
         [Display(Name = "Model UN")]
         ModelUN
     }
+
+    public enum Gender
+    {
+        [Display(Name = "Male")]
+        male,
+        [Display(Name = "Female")]
+        female,
+        [Display(Name = "Non Binary")]
+        non_binary,
+        [Display(Name = "Prefer not to Say")]
+        not_say
+
+    }
     public class ApplicationUser : IdentityUser
     {
         public ApplicationUser() { }
@@ -244,6 +257,8 @@ namespace Zusammen.Models
         public Major major { get; set; }
 
         public String name { get; set; }
+
+        public Gender gender { get; set; }
 
         [NotMapped]
         public List<Hobbies>? hobbies { get; set; } = new List<Hobbies>();
