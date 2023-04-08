@@ -31,7 +31,7 @@
 </div>
 
 <script>
-    var items = '@ViewBag.RValues';
+    var items = @Html.Raw(Json.Serialize(ViewBag.items));
     console.log(items);
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
