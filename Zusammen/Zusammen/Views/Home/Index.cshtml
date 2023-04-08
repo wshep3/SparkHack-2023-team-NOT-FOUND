@@ -11,10 +11,10 @@
     <h1 class="display-4">Welcome to Zusammen</h1>
     @if (User.Identity.IsAuthenticated)
     {
-        <p>Welcome, @user.name</p>
-        <p>@user.schoolyear</p>
+        <canvas id="myCanvas" width="1000" height="400" style="border:1px solid #000000;">
+        </canvas>
+
     }
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 <div>
     <!--
@@ -30,3 +30,18 @@
 
 </div>
 
+<script>var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    var r = 40;
+
+    var x = r*Math.cos(Math.random() * 2 * Math.PI) + (1000/2);
+    var y = r * Math.sin(Math.random() * 2 * Math.PI) + (400/2);
+    drawCircle(x, y, 40);
+
+    function drawCircle(xdist, ydist, radius) {
+        ctx.beginPath();
+        ctx.arc(xdist, ydist, radius, 0, 2 * Math.PI);
+        ctx.stroke();
+    }
+
+</script>
