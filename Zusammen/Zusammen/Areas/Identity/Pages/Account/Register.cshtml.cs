@@ -80,6 +80,10 @@ namespace Zusammen.Areas.Identity.Pages.Account
             [Display]
             public SchoolYear schoolyear { get; set; }
 
+            [Required]
+            [Display]
+            public Major major { get; set; }
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -126,6 +130,7 @@ namespace Zusammen.Areas.Identity.Pages.Account
 
                 user.schoolyear = Input.schoolyear;
                 user.schoolhousing = Input.schoolhousing;
+                user.major = Input.major;
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);

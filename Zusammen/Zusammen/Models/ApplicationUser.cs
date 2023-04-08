@@ -192,6 +192,7 @@ namespace Zusammen.Models
         public ApplicationUser() { }
         public SchoolYear schoolyear { get; set; }
         public SchoolHousing schoolhousing { get; set; }
+        public Major major { get; set; }
 
     }
             
