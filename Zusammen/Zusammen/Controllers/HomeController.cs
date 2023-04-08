@@ -20,9 +20,11 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        var users = _userManager.Users.ToList();
-
-        var rValues = calcRValues(users);
+        if (User.Identity.IsAuthenticated)
+        {
+            var users = _userManager.Users.ToList();
+            var rValues = calcRValues(users);
+        }
         return View();
     }
 
@@ -40,6 +42,7 @@ public class HomeController : Controller
 
     public List<int> calcRValues(List<ApplicationUser> users)
     {
+        var user = _userManager.GetUserAsync(User).Result;
         var rValues = new List<int>();
         for(int i=0; i<users.Count; i++)
         {
@@ -48,21 +51,21 @@ public class HomeController : Controller
         //major
         for(int i=0;i<users.Count;i++)
         {
-            if (users[i].major == /* our_user.major*/)
+            if (users[i].major == user.major)
             {
                 rValues[i] += 1;
             }
         }
         for(int i=0;i<users.Count;i++)
         {
-            if (users[i].schoolhousing == /*our_user.schoolhousing*/)
+            if (users[i].schoolhousing == user.schoolhousing)
             {
                 rValues[i] += 1;
             }
         }
         for (int i = 0; i < users.Count; i++)
         {
-            if (users[i].schoolyear == /*our_user.schoolyear*/)
+            if (users[i].schoolyear == user.schoolyear)
             {
                 rValues[i] += 1;
             }
