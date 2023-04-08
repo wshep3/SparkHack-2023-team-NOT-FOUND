@@ -6,4 +6,18 @@
 }
 @model ApplicationUser
 
+<div class="text-center">
+    <h1 class="display-4">@Model.name </h1>
+</div>
+<div>
+    <p>Major: @Model.major</p>
+    <p>Housing: @Model.schoolhousing</p>
+    <p>Hobbies</p>
+    <ul>
+        @foreach (var hobbie in Enum.GetValues(typeof(Hobbies)))
+        {
+            <li>@Model.hobbies.ToString()</li>
+        }
+    </ul>
 
+</div>
