@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using Zusammen.Models;
+using System.Reflection;
+using Zusammen.Data;
+
 namespace Zusammen.Controllers;
 
 public class HomeController : Controller
@@ -24,6 +27,9 @@ public class HomeController : Controller
         {
             var users = _userManager.Users.ToList();
             var rValues = calcRValues(users);
+            HomeModel m = new HomeModel();
+            m.items = rValues;
+            m.appUsers = users;
             return View(rValues);
         }
         return View(new List<int>());
@@ -34,8 +40,9 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Profile(ApplicationUser user)
+    public IActionResult Profile(string id)
     {
+        var user = _userManager.FindByIdAsync(id);
         return View(user);
     }
 

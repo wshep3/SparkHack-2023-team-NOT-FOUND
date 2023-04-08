@@ -30,13 +30,13 @@
         var r = l * (k - items[i]);
         var x = r * Math.cos(Math.random() * 2 * Math.PI) + (1000 / 2);
         var y = r * Math.sin(Math.random() * 2 * Math.PI) + (400 / 2);
-        drawCircle(x, y, 40);
+        drawCircle(x, y, 40, i);
     }
     
 
     
 
-    function drawCircle(xdist, ydist, radius) {
+    function drawCircle(xdist, ydist, radius, j) {
         ctx.beginPath();
         ctx.arc(xdist, ydist, radius, 0, 2 * Math.PI);
         ctx.stroke();
@@ -45,7 +45,7 @@
             const x = event.clientX - rect.left;
             const y = event.clientY - rect.top;
             if (Math.sqrt((x - xdist) ** 2 + (y - ydist) ** 2) <= radius) {
-                window.location.href = circle.url;
+                window.location.href = "@Url.Action("Profile", @Model.appUsers[1]);
             }
         });
     }
