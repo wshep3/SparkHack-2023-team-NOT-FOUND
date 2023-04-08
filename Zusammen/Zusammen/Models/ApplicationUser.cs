@@ -189,52 +189,52 @@ namespace Zusammen.Models
 
     public enum Hobbies
     {
-        Writing,
-        Reading,
-        [Display(Name = "Watching Movies/TV Shows")]
-        moviesTVShows,
-        [Display(Name = "Video Games")]
-        videoGames,
-        Sports,
-        Dancing,
-        Hiking,
-        Cooking,
-        Photography,
-        [Display(Name = "Painting/Drawing")]
-        PaintingDrawing,
-        Yoga,
-        Meditation,
-        [Display(Name = "Running/Jogging")]
-        Running,
-        Swimming,
-        Biking,
-        Skateboarding,
-        [Display(Name = "Playing Musical")]
-        PlayingMusical,
-        Singing,
         Acting,
+        Biking,
+        [Display(Name = "Collecting (e.g. stamps, coins, rocks, etc.)")]
+        Collecting,
+        Cooking,
+        DIY,
+        Dancing,
+        Debating,
+        Gardening,
+        Fishing,
+        Hiking,
+        [Display(Name = "Knitting/Crocheting")]
+        KnittingCrocheting,
         Magic,
         [Display(Name = "Martial Arts")]
         MartialArts,
-        [Display(Name = "Weightlifting/Bodybuilding")]
-        WeightliftingBodybuilding,
+        Meditation,
+        Mentoring,
+        [Display(Name = "Model UN")]
+        ModelUN,
+        [Display(Name = "Painting/Drawing")]
+        PaintingDrawing,
+        Photography,
+        [Display(Name = "Playing Music")]
+        PlayingMusic,
+        Reading,
         [Display(Name = "Rock Climabing")]
         RockClimbing,
-        Gardening,
-        Fishing,
-        [Display(Name = "Collecting (e.g. stamps, coins, rocks, etc.)")]
-        Collecting,
-        DIY,
-        Woodworking,
-        [Display(Name = "Knitting/Crocheting")]
-        KnittingCrocheting,
+        [Display(Name = "Running/Jogging")]
+        Running,
         Sewing,
-        Volunteering,
-        Tutoring,
-        Mentoring,
-        Debating,
-        [Display(Name = "Model UN")]
-        ModelUN
+        Singing,
+        Skateboarding,
+        Sports,
+        Swimming,
+        Tutoring,       
+        [Display(Name = "Video Games")]
+        videoGames,
+        Volunteering,  
+        [Display(Name = "Watching Movies/TV Shows")]
+        moviesTVShows,
+        [Display(Name = "Weightlifting/Bodybuilding")]
+        WeightliftingBodybuilding,
+        Woodworking,
+        Writing,
+        Yoga
     }
 
     public enum Gender
