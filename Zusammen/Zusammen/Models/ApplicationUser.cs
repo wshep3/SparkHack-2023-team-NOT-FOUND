@@ -22,7 +22,8 @@ namespace Zusammen.Models
         jst,
         mrh,
         ssr,
-        tbh
+        tbh,
+        commuter
     }
     public class ApplicationUser : IdentityUser
     {

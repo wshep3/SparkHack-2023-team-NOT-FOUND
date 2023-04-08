@@ -73,7 +73,11 @@ namespace Zusammen.Areas.Identity.Pages.Account
         public class InputModel
         {
             [Required]
-            [Display(Name = "SchoolYear")]
+            [Display]
+            public SchoolHousing schoolhousing { get; set; }
+
+            [Required]
+            [Display]
             public SchoolYear schoolyear { get; set; }
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
