@@ -22,6 +22,7 @@ public class HomeController : Controller
     {
         var users = _userManager.Users.ToList();
 
+        var rValues = calcRValues(users);
         return View();
     }
 
@@ -37,5 +38,11 @@ public class HomeController : Controller
     }
 
 
+    public List<int> calcRValues(List<ApplicationUser> users)
+    {
+        return new List<int>();
+    }
 }
+
+
 
