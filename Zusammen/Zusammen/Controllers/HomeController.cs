@@ -40,9 +40,9 @@ public class HomeController : Controller
         return View();
     }
 
-    public ActionResult Profile(string id)
+    public async Task<IActionResult> Profile(string id)
     {
-        var user = _userManager.FindByIdAsync(id);
+        var user = await _userManager.FindByIdAsync(id);
         return View(user);
     }
 

@@ -41,12 +41,8 @@
         ctx.arc(xdist, ydist, radius, 0, 2 * Math.PI);
         ctx.stroke();
         c.addEventListener('click', event => {
-            const rect = canvas.getBoundingClientRect();
-            const x = event.clientX - rect.left;
-            const y = event.clientY - rect.top;
-            if (Math.sqrt((x - xdist) ** 2 + (y - ydist) ** 2) <= radius) {
-                window.location.href = "@Url.Action("Profile", @Model.appUsers[1])";
-            }
+            window.location.href = "@Url.Action("Profile", "Home", @Model.appUsers[1].Id)";
+
         });
     }
 
