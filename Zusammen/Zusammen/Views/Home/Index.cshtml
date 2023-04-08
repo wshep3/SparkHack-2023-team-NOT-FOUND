@@ -45,7 +45,7 @@
             const x = event.clientX - rect.left;
             const y = event.clientY - rect.top;
             if (Math.sqrt((x - xdist) ** 2 + (y - ydist) ** 2) <= radius) {
-                window.location.href = "@Url.Action("Profile", @Model.appUsers[1]);
+                window.location.href = "@Url.Action("Profile", @Model.appUsers[1])";
             }
         });
     }

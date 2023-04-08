@@ -30,7 +30,7 @@ public class HomeController : Controller
             HomeModel m = new HomeModel();
             m.items = rValues;
             m.appUsers = users;
-            return View(rValues);
+            return View(m);
         }
         return View(new List<int>());
     }
@@ -40,7 +40,7 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Profile(string id)
+    public ActionResult Profile(string id)
     {
         var user = _userManager.FindByIdAsync(id);
         return View(user);
