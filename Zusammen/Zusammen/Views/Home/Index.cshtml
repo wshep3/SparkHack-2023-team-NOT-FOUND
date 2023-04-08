@@ -40,6 +40,13 @@
         ctx.beginPath();
         ctx.arc(xdist, ydist, radius, 0, 2 * Math.PI);
         ctx.stroke();
+        if (xdist == 1000 / 2 && ydist == 400 / 2) {
+            ctx.fillStyle = 'blue';
+        } else {
+            ctx.fillStyle = 'red';
+        }
+        
+        ctx.fill();
         c.addEventListener('click', event => {
             var x = event.clientX - c.offsetLeft;
             var y = event.clientY - c.offsetTop;
