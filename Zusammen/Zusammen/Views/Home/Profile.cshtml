@@ -13,9 +13,9 @@
     <p>Housing: @Model.schoolhousing</p>
     <p>Hobbies</p>
     <ul>
-        @foreach (var hobbie in Enum.GetValues(typeof(Hobbies)))
+        @foreach (var hobbie in Model.hobbies)
         {
-            <li>@Model.hobbies.ToString()</li>
+            <li>@hobbie</li>
         }
     </ul>
 
