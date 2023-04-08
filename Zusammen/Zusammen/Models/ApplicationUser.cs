@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity;
 
 namespace Zusammen.Models
@@ -243,6 +244,9 @@ namespace Zusammen.Models
         public Major major { get; set; }
 
         public String name { get; set; }
+
+        [NotMapped]
+        public List<Hobbies>? hobbies { get; set; } = new List<Hobbies>();
 
     }
             

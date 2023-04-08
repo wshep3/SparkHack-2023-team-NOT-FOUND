@@ -88,6 +88,10 @@ namespace Zusammen.Areas.Identity.Pages.Account
             [Display(Name = "Full Name")]
             public string name { get; set; }
 
+            [Required]
+            [Display(Name = "Hobbies")]
+            public List<Hobbies> hobbies { get; set; }
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -136,7 +140,8 @@ namespace Zusammen.Areas.Identity.Pages.Account
                 user.schoolhousing = Input.schoolhousing;
                 user.major = Input.major;
                 user.name = Input.name;
-
+                user.hobbies = Input.hobbies;
+              
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
