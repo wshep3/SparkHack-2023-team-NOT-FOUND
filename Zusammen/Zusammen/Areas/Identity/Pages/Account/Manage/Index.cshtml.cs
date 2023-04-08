@@ -55,11 +55,13 @@ namespace Zusammen.Areas.Identity.Pages.Account.Manage
         /// </summary>
         public class InputModel
         {
+
             [Display]
             public String name { get; set; }
 
             [Display]
             public Gender gender { get; set; }
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -75,7 +77,7 @@ namespace Zusammen.Areas.Identity.Pages.Account.Manage
 
             Input = new InputModel
             {
-                
+                gender = user.gender
             };
         }
 
@@ -94,7 +96,10 @@ namespace Zusammen.Areas.Identity.Pages.Account.Manage
         public async Task<IActionResult> OnPostAsync()
         {
             var user = await _userManager.GetUserAsync(User);
-            var store = new UserStore<ApplicationUser>(new ApplicationDbContext());
+
+            user.gender = Input.gender;
+            if(Input.name == null) { Input.name = user.name; }
+            user.name = Input.name;
 
             if (user == null)
             {
@@ -110,8 +115,7 @@ namespace Zusammen.Areas.Identity.Pages.Account.Manage
             }
 
 
-            user.gender = Input.gender;
-            user.name = Input.name;
+            
 
             var result = _userManager.UpdateAsync(user);
 
