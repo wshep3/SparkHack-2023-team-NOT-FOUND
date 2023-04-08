@@ -6,6 +6,7 @@
     var user = UserManager.GetUserAsync(User).Result;
 
 }
+@model List<int>
 
 <div class="text-center">
     <h1 class="display-4">Welcome to Zusammen</h1>
@@ -31,7 +32,7 @@
 </div>
 
 <script>
-    var items = @Html.Raw(Json.Serialize(ViewBag.items));
+    var items = @Html.Raw(Json.Serialize(Model));
     console.log(items);
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
