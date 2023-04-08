@@ -37,7 +37,7 @@
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     var k = items.reduce((a, b) => Math.max(a, b), -Infinity);
-    var l = 250;
+    var l = 100;
 
     for (let i = 0; i < items.length; i++) {
         var r = l * (k - items[i]);
