@@ -242,6 +242,8 @@ namespace Zusammen.Models
         public SchoolHousing schoolhousing { get; set; }
         public Major major { get; set; }
 
+        public String name { get; set; }
+
     }
             
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "T7b8Jxr6UgHhxxHk3PNnPX3sYfO1CNVqD90/7PexQX9VOaqE/Qp2HN7KFvSxS5QKvqkRUahEubC33JVXxefxyw==",
+  "dgSpecHash": "fxM7R8OUVPTZ2e4MiSqiimRBCjd2bXvbsLnSDDU/DFwiTX+oiS+fGWTUP4bS+zkKoQqrtVe5mDaCaOElItaXJQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\WShep\\OneDrive\\Documents\\GitHub\\SparkHack-2023-team-NOT-FOUND\\Zusammen\\Zusammen\\Zusammen.csproj",
   "expectedPackageFiles": [
@@ -16,7 +16,7 @@
     "C:\\Users\\WShep\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\WShep\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",
     "C:\\Users\\WShep\\.nuget\\packages\\microsoft.build.framework\\17.3.2\\microsoft.build.framework.17.3.2.nupkg.sha512",
-    "C:\\Users\\WShep\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
+    "C:\\Users\\WShep\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.4\\microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",
     "C:\\Users\\WShep\\.nuget\\packages\\microsoft.codeanalysis.analyzerutilities\\3.3.0\\microsoft.codeanalysis.analyzerutilities.3.3.0.nupkg.sha512",
     "C:\\Users\\WShep\\.nuget\\packages\\microsoft.codeanalysis.common\\4.4.0\\microsoft.codeanalysis.common.4.4.0.nupkg.sha512",
     "C:\\Users\\WShep\\.nuget\\packages\\microsoft.codeanalysis.csharp\\4.4.0\\microsoft.codeanalysis.csharp.4.4.0.nupkg.sha512",

@@ -9,12 +9,12 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome to Zusammen</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
     @if (User.Identity.IsAuthenticated)
     {
-        <p>Welcome, @User.Identity.Name!</p>
+        <p>Welcome, @user.name</p>
         <p>@user.schoolyear</p>
     }
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 <div>
     <!--
