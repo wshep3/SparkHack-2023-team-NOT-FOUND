@@ -109,6 +109,7 @@ namespace Zusammen.Areas.Identity.Pages.Account.Manage
             user.schoolyear = Input.schoolyear;
             user.schoolhousing = Input.schoolhousing;
             if(Input.name == null) { Input.name = user.name; }
+            var store = new UserStore<ApplicationUser>(new ApplicationDbContext());
             user.name = Input.name;
 
             if (user == null)
@@ -125,6 +126,11 @@ namespace Zusammen.Areas.Identity.Pages.Account.Manage
             }
 
 
+            if(Input.name != null)
+            {
+                user.name = Input.name;
+            }
+            user.gender = Input.gender;
             
 
             var result = _userManager.UpdateAsync(user);

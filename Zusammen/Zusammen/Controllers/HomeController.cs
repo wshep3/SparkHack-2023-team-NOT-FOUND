@@ -24,6 +24,7 @@ public class HomeController : Controller
         {
             var users = _userManager.Users.ToList();
             var rValues = calcRValues(users);
+            ViewBag.RValues = rValues;
         }
         return View();
     }

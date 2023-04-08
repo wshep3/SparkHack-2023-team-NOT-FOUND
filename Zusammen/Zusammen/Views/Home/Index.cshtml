@@ -30,7 +30,10 @@
 
 </div>
 
-<script>var c = document.getElementById("myCanvas");
+<script>
+    var items = '@ViewBag.RValues';
+    console.log(items);
+    var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     var r = 40;
 
