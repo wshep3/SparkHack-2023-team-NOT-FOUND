@@ -32,7 +32,7 @@ public class HomeController : Controller
             m.appUsers = users;
             return View(m);
         }
-        return View(new List<int>());
+        return View(new HomeModel());
     }
 
     public IActionResult Privacy()
