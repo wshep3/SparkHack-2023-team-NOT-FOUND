@@ -190,7 +190,7 @@ namespace Zusammen.Models
     {
         Writing,
         Reading,
-        [Display(Name = "Watching Movies\TV Shows")]
+        [Display(Name = "Watching Movies/TV Shows")]
         moviesTVShows,
         [Display(Name = "Video Games")]
         videoGames,
