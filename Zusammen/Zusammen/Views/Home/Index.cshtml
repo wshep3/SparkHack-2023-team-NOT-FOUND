@@ -6,7 +6,7 @@
     var user = UserManager.GetUserAsync(User).Result;
 
 }
-@model List<int>
+@model HomeModel
 
 <div class="text-center">
     <h1 class="display-4">Welcome to Zusammen</h1>
@@ -19,20 +19,18 @@
 </div>
 
 <script>
-    var items = @Html.Raw(Json.Serialize(Model));
+    var items = @Html.Raw(Json.Serialize(Model.items));
     console.log(items);
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     var k = items.reduce((a, b) => Math.max(a, b), -Infinity);
     var l = 100;
-    var circle_list = []
 
     for (let i = 0; i < items.length; i++) {
         var r = l * (k - items[i]);
         var x = r * Math.cos(Math.random() * 2 * Math.PI) + (1000 / 2);
         var y = r * Math.sin(Math.random() * 2 * Math.PI) + (400 / 2);
         drawCircle(x, y, 40);
-        circle_list.push({x-val: x, y-val: y, r-val: 40}) //okay carmen its up to you
     }
     
 
@@ -42,6 +40,14 @@
         ctx.beginPath();
         ctx.arc(xdist, ydist, radius, 0, 2 * Math.PI);
         ctx.stroke();
+        c.addEventListener('click', event => {
+            const rect = canvas.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+            if (Math.sqrt((x - xdist) ** 2 + (y - ydist) ** 2) <= radius) {
+                window.location.href = circle.url;
+            }
+        });
     }
 
 </script>
