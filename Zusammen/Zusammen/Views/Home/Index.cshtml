@@ -1,13 +1,23 @@
-﻿@{
+﻿@using System.Security.Claims;
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> UserManager
+@{
     ViewData["Title"] = "Home Page";
+    var user = UserManager.GetUserAsync(User).Result;
+
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome to Zusammen</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <p>Welcome, @User.Identity.Name!</p>
+        <p>@user.schoolyear</p>
+    }
 </div>
 <div>
-    <!-- 
+    <!--
 
     <li class="nav-item">
         <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
