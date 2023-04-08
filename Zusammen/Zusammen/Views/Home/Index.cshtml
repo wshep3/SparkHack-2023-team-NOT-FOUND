@@ -11,11 +11,11 @@
 <div class="text-center">
     <h1 class="display-4">Welcome to Zusammen</h1>
     @if (User.Identity.IsAuthenticated)
-    {
+        {
         <canvas id="myCanvas" width="1000" height="400" style="border:1px solid #000000;">
         </canvas>
 
-    }
+        }
 </div>
 
 <script>
@@ -32,16 +32,25 @@
         var y = r * Math.sin(Math.random() * 2 * Math.PI) + (400 / 2);
         drawCircle(x, y, 40, i);
     }
-    
 
-    
+
+
 
     function drawCircle(xdist, ydist, radius, j) {
         ctx.beginPath();
         ctx.arc(xdist, ydist, radius, 0, 2 * Math.PI);
         ctx.stroke();
         c.addEventListener('click', event => {
-            window.location.href = "@Url.Action("Profile", "Home", @Model.appUsers[1].Id)";
+            var x = event.clientX - c.offsetLeft;
+            var y = event.clientY - c.offsetTop;
+            var distance = Math.sqrt(Math.pow(x - xdist, 2) + Math.pow(y - ydist, 2));
+            if (distance <= radius) {
+                @{
+                    Random rand = new Random();
+                    int randomNumber = rand.Next(0, 4);
+                }
+                window.location.href = "@Url.Action("Profile", "Home", new { id = @Model.appUsers[randomNumber].Id })";
+            }
 
         });
     }
