@@ -940,3 +940,6 @@ C:\Users\WShep\OneDrive\Documents\GitHub\SparkHack-2023-team-NOT-FOUND\Zusammen\
 C:\Users\WShep\OneDrive\Documents\GitHub\SparkHack-2023-team-NOT-FOUND\Zusammen\Zusammen\obj\Debug\net7.0\Zusammen.pdb
 C:\Users\WShep\OneDrive\Documents\GitHub\SparkHack-2023-team-NOT-FOUND\Zusammen\Zusammen\obj\Debug\net7.0\Zusammen.genruntimeconfig.cache
 C:\Users\WShep\OneDrive\Documents\GitHub\SparkHack-2023-team-NOT-FOUND\Zusammen\Zusammen\obj\Debug\net7.0\ref\Zusammen.dll
+C:\Users\WShep\OneDrive\Documents\GitHub\SparkHack-2023-team-NOT-FOUND\Zusammen\Zusammen\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\WShep\OneDrive\Documents\GitHub\SparkHack-2023-team-NOT-FOUND\Zusammen\Zusammen\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\WShep\OneDrive\Documents\GitHub\SparkHack-2023-team-NOT-FOUND\Zusammen\Zusammen\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll

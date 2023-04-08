@@ -20,6 +20,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using Zusammen.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Zusammen.Areas.Identity.Pages.Account
 {
@@ -70,6 +71,8 @@ namespace Zusammen.Areas.Identity.Pages.Account
         ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
         ///     directly from your code. This API may change or be removed in future releases.
         /// </summary>
+        /// 
+
         public class InputModel
         {
             [Required]
@@ -146,7 +149,7 @@ namespace Zusammen.Areas.Identity.Pages.Account
                 user.gender = Input.gender;
                 user.name = Input.name;
                 user.hobbies = Input.hobbies;
-              
+
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);

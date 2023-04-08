@@ -62,6 +62,12 @@ namespace Zusammen.Areas.Identity.Pages.Account.Manage
             [Display]
             public Gender gender { get; set; }
 
+            [Display]
+            public SchoolYear schoolyear { get; set; }
+
+            [Display]
+            public SchoolHousing schoolhousing { get; set; }
+
             /// <summary>
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
@@ -77,7 +83,9 @@ namespace Zusammen.Areas.Identity.Pages.Account.Manage
 
             Input = new InputModel
             {
-                gender = user.gender
+                gender = user.gender,
+                schoolyear = user.schoolyear,
+                schoolhousing = user.schoolhousing
             };
         }
 
@@ -98,6 +106,8 @@ namespace Zusammen.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
 
             user.gender = Input.gender;
+            user.schoolyear = Input.schoolyear;
+            user.schoolhousing = Input.schoolhousing;
             if(Input.name == null) { Input.name = user.name; }
             user.name = Input.name;
 
