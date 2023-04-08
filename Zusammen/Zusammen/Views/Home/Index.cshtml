@@ -17,19 +17,6 @@
 
     }
 </div>
-<div>
-    <!--
-
-    <li class="nav-item">
-        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity?.Name!</a>
-    </li>
-
-
-
-    -->
-
-
-</div>
 
 <script>
     var items = @Html.Raw(Json.Serialize(Model));
@@ -38,12 +25,14 @@
     var ctx = c.getContext("2d");
     var k = items.reduce((a, b) => Math.max(a, b), -Infinity);
     var l = 100;
+    var circle_list = []
 
     for (let i = 0; i < items.length; i++) {
         var r = l * (k - items[i]);
         var x = r * Math.cos(Math.random() * 2 * Math.PI) + (1000 / 2);
         var y = r * Math.sin(Math.random() * 2 * Math.PI) + (400 / 2);
         drawCircle(x, y, 40);
+        circle_list.push({x-val: x, y-val: y, r-val: 40}) //okay carmen its up to you
     }
     
 
