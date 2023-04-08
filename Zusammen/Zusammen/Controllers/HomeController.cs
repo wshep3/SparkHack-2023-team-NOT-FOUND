@@ -70,6 +70,19 @@ public class HomeController : Controller
                 rValues[i] += 1;
             }
         }
+        for(int i=0;i<users.Count; i++)
+        {
+            for(int j=0;j<user.hobbies.Count;j++)
+            {
+                for(int k = 0; k < users[i].hobbies.Count;k++)
+                {
+                    if (user.hobbies[j] == users[i].hobbies[k])
+                    {
+                        rValues[i] += 1;
+                    }
+                }
+            }
+        }
         return new List<int>();
     }
 }
