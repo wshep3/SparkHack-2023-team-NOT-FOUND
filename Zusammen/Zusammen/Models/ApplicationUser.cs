@@ -224,17 +224,17 @@ namespace Zusammen.Models
         Skateboarding,
         Sports,
         Swimming,
-        Tutoring,
-        Volunteering,
+        Tutoring,       
+        [Display(Name = "Video Games")]
+        videoGames,
+        Volunteering,  
+        [Display(Name = "Watching Movies/TV Shows")]
+        moviesTVShows,
         [Display(Name = "Weightlifting/Bodybuilding")]
         WeightliftingBodybuilding,
         Woodworking,
         Writing,
-        Yoga,
-        [Display(Name = "Video Games")]
-        videoGames,
-        [Display(Name = "Watching Movies/TV Shows")]
-        moviesTVShows
+        Yoga
     }
 
     public enum Gender
