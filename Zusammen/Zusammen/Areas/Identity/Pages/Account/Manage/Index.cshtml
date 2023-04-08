@@ -16,9 +16,15 @@
                 <label asp-for="Username" class="form-label"></label>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.PhoneNumber" class="form-control" placeholder="Please enter your phone number."/>
-                <label asp-for="Input.PhoneNumber" class="form-label"></label>
-                <span asp-validation-for="Input.PhoneNumber" class="text-danger"></span>
+                <input asp-for="Input.name" class="form-control" autocomplete="first/last name" placeholder="John Doe" />
+                <label asp-for="Input.name">Change Full Name</label>
+                <span asp-validation-for="Input.name" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <select asp-for="Input.gender" asp-items="@Html.GetEnumSelectList<Gender>()">
+                    <option value="">-- Select New Gender --</option>
+                </select>
+                <span asp-validation-for="Input.gender" class="text-danger"></span>
             </div>
             <button id="update-profile-button" type="submit" class="w-100 btn btn-lg btn-primary">Save</button>
         </form>
