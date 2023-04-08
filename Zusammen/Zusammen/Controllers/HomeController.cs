@@ -11,14 +11,11 @@ public class HomeController : Controller
     private readonly ILogger<HomeController> _logger;
     private readonly UserManager<ApplicationUser> _userManager;
 
-    public HomeController(UserManager<ApplicationUser> userManager)
-    {
-        _userManager = userManager;
-    }
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, UserManager<ApplicationUser> userManager)
     {
         _logger = logger;
+        _userManager = userManager;
     }
 
     public IActionResult Index()
