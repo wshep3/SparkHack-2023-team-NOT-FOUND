@@ -184,9 +184,57 @@ namespace Zusammen.Models
         UrbanEducation,
         [Display(Name = "Urban Studies")]
         UrbanStudies
-
     }
 
+    public enum Hobbies
+    {
+        Writing,
+        Reading,
+        [Display(Name = "Watching Movies\TV Shows")]
+        moviesTVShows,
+        [Display(Name = "Video Games")]
+        videoGames,
+        Sports,
+        Dancing,
+        Hiking,
+        Cooking,
+        Photography,
+        [Display(Name = "Painting/Drawing")]
+        PaintingDrawing,
+        Yoga,
+        Meditation,
+        [Display(Name = "Running/Jogging")]
+        Running,
+        Swimming,
+        Biking,
+        Skateboarding,
+        [Display(Name = "Playing Musical")]
+        PlayingMusical,
+        Singing,
+        Acting,
+        Magic,
+        [Display(Name = "Martial Arts")]
+        MartialArts,
+        [Display(Name = "Weightlifting/Bodybuilding")]
+        WeightliftingBodybuilding,
+        [Display(Name = "Rock Climabing")]
+        RockClimbing,
+        Gardening,
+        Fishing,
+        [Display(Name = "Collecting (e.g. stamps, coins, rocks, etc.)")]
+        Collecting,
+        DIY,
+        Woodworking,
+        [Display(Name = "Knitting/Crocheting")]
+        KnittingCrocheting,
+        Sewing,
+        Volunteering,
+        Tutoring,
+        Mentoring,
+        Debating,
+        [Display(Name = "Model UN")]
+        ModelUN
+    }
     public class ApplicationUser : IdentityUser
     {
         public ApplicationUser() { }
