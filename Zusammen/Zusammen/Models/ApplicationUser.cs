@@ -85,8 +85,8 @@ namespace Zusammen.Models
         [Display(Name = "Earth and Enviromental Sciences")]
         EarthAndEnviromentalSciences,
         Economics,
-        [Display(Name = "Electriacl Engineering")]
-        ElectriaclEngineering,
+        [Display(Name = "Electrical Engineering")]
+        ElectricalEngineering,
         [Display(Name = "Engineering Managment")]
         EngineeringManagment,
         [Display(Name = "Engineering Physics")]
@@ -106,8 +106,8 @@ namespace Zusammen.Models
         GlobalAsianStudies,
         [Display(Name = "Graphic Design")]
         GraphicDesign,
-        [Display(Name = "Health Inormation Management")]
-        HealthInormationManagement,
+        [Display(Name = "Health Ifnormation Management")]
+        HealthIfnormationManagement,
         History,
         [Display(Name = "Human Development and Learning")]
         HumanDevelopmentAndLearning,
