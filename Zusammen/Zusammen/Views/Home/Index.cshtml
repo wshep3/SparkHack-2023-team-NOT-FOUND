@@ -8,7 +8,8 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome to Zusammen</h1>
+    <h2 class="display-4">Welcome to</h2>
+    <h1 class="display-2">ZUSAMMEN</h1>
     @if (User.Identity.IsAuthenticated)
     {
         <canvas id="myCanvas" width="1000" height="400" style="border:1px solid #000000;">
@@ -16,6 +17,38 @@
 
     }
 </div>
+
+<div class="organizer">
+    <div class="center">
+        <div style="float:left; margin-right: 50px;">
+            <img src="https://cdn.elearningindustry.com/wp-content/uploads/2022/05/shutterstock_1070048579.jpg" style="padding-left: 30px;" />
+        </div>
+        <div class="left-pad-text">
+            <h3>Make connections with Zusammen</h3>
+            Find your community and build a network. Make a free account and register with today to find your people.
+            Click the Register tab to get started.
+        </div>
+
+        <pre>
+
+
+
+
+
+</pre>
+
+        <div style="float:right;">
+            <img src="https://cdn.pixabay.com/photo/2017/01/18/08/20/network-1989138_1280.png" style="margin-top: 20px; padding-right: 30px;" />
+        </div>
+        <div class="right-pad-text" style="padding-left: 30px">
+            <h3>Worry-free Networking</h3>
+            We only use the data you give us, and only the minimum necessary in order for Zusammen to work. Check
+            out our Privacy Policy to learn more about how we manage your data.
+        </div>
+    </div>
+</div>
+
+
 <div>
     <!--
 
@@ -30,18 +63,16 @@
 
 </div>
 
-<script>var c = document.getElementById("myCanvas");
+<script>    var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     var r = 40;
 
-    var x = r*Math.cos(Math.random() * 2 * Math.PI) + (1000/2);
-    var y = r * Math.sin(Math.random() * 2 * Math.PI) + (400/2);
+    var x = r * Math.cos(Math.random() * 2 * Math.PI) + (1000 / 2);
+    var y = r * Math.sin(Math.random() * 2 * Math.PI) + (400 / 2);
     drawCircle(x, y, 40);
 
     function drawCircle(xdist, ydist, radius) {
         ctx.beginPath();
         ctx.arc(xdist, ydist, radius, 0, 2 * Math.PI);
         ctx.stroke();
-    }
-
-</script>
+    }</script>

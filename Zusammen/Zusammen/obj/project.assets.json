@@ -11733,19 +11733,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\WShep\\.nuget\\packages\\": {}
+    "C:\\Users\\Cwood\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WShep\\OneDrive\\Documents\\GitHub\\SparkHack-2023-team-NOT-FOUND\\Zusammen\\Zusammen\\Zusammen.csproj",
+      "projectUniqueName": "C:\\Users\\Cwood\\Documents\\SparkHack\\SparkHack-2023-team-The-Last-Codebenders\\Zusammen\\Zusammen\\Zusammen.csproj",
       "projectName": "Zusammen",
-      "projectPath": "C:\\Users\\WShep\\OneDrive\\Documents\\GitHub\\SparkHack-2023-team-NOT-FOUND\\Zusammen\\Zusammen\\Zusammen.csproj",
-      "packagesPath": "C:\\Users\\WShep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WShep\\OneDrive\\Documents\\GitHub\\SparkHack-2023-team-NOT-FOUND\\Zusammen\\Zusammen\\obj\\",
+      "projectPath": "C:\\Users\\Cwood\\Documents\\SparkHack\\SparkHack-2023-team-The-Last-Codebenders\\Zusammen\\Zusammen\\Zusammen.csproj",
+      "packagesPath": "C:\\Users\\Cwood\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Cwood\\Documents\\SparkHack\\SparkHack-2023-team-The-Last-Codebenders\\Zusammen\\Zusammen\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\WShep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cwood\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

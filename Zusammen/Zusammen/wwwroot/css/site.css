@@ -1,22 +1,55 @@
 ﻿html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    height: 600px;
+    padding: 30px;
+    background-color: white;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: aliceblue;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+}
+
+.left-pad-text {
+    max-width: 100%;
+    width: 800px;
+    padding-left: 50px;
+}
+
+.right-pad-text {
+    max-width: 100%;
+    width: 500px;
+    padding-right: 50px;
+}
+
+gutter {
+    width: 80%;
+    height: 200px;
+    background-color: white;
 }
