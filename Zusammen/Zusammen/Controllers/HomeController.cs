@@ -1,12 +1,20 @@
 ﻿using System.Diagnostics;
+using System.Net.NetworkInformation;
+using Microsoft.AspNetCore.Identity;
+using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
 using Zusammen.Models;
-
 namespace Zusammen.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly UserManager<ApplicationUser> _userManager;
+
+    public HomeController(UserManager<ApplicationUser> userManager)
+    {
+        _userManager = userManager;
+    }
 
     public HomeController(ILogger<HomeController> logger)
     {
@@ -15,6 +23,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        var users = _userManager.Users.ToList();
         return View();
     }
 
