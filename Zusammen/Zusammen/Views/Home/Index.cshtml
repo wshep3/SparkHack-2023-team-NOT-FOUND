@@ -36,11 +36,18 @@
     console.log(items);
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
-    var r = 40;
+    var k = items.reduce((a, b) => Math.max(a, b), -Infinity);
+    var l = 250;
 
-    var x = r*Math.cos(Math.random() * 2 * Math.PI) + (1000/2);
-    var y = r * Math.sin(Math.random() * 2 * Math.PI) + (400/2);
-    drawCircle(x, y, 40);
+    for (let i = 0; i < items.length; i++) {
+        var r = l * (k - items[i]);
+        var x = r * Math.cos(Math.random() * 2 * Math.PI) + (1000 / 2);
+        var y = r * Math.sin(Math.random() * 2 * Math.PI) + (400 / 2);
+        drawCircle(x, y, 40);
+    }
+    
+
+    
 
     function drawCircle(xdist, ydist, radius) {
         ctx.beginPath();

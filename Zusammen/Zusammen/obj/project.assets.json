@@ -13078,26 +13078,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\WShep\\.nuget\\packages\\": {}
+    "/Users/carmenthom/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WShep\\OneDrive\\Documents\\GitHub\\SparkHack-2023-team-NOT-FOUND\\Zusammen\\Zusammen\\Zusammen.csproj",
+      "projectUniqueName": "/Users/carmenthom/Documents/SparkHack-2023-team-NOT-FOUND/Zusammen/Zusammen/Zusammen.csproj",
       "projectName": "Zusammen",
-      "projectPath": "C:\\Users\\WShep\\OneDrive\\Documents\\GitHub\\SparkHack-2023-team-NOT-FOUND\\Zusammen\\Zusammen\\Zusammen.csproj",
-      "packagesPath": "C:\\Users\\WShep\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WShep\\OneDrive\\Documents\\GitHub\\SparkHack-2023-team-NOT-FOUND\\Zusammen\\Zusammen\\obj\\",
+      "projectPath": "/Users/carmenthom/Documents/SparkHack-2023-team-NOT-FOUND/Zusammen/Zusammen/Zusammen.csproj",
+      "packagesPath": "/Users/carmenthom/.nuget/packages/",
+      "outputPath": "/Users/carmenthom/Documents/SparkHack-2023-team-NOT-FOUND/Zusammen/Zusammen/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\WShep\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/carmenthom/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -13186,8 +13184,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /Users/carmenthom/Documents/SparkHack-2023-team-NOT-FOUND/Zusammen/Zusammen/obj/project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
