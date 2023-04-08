@@ -84,7 +84,7 @@ public class HomeController : Controller
                 }
             }
         }
-        return new List<int>();
+        return rValues;
     }
 }
 
